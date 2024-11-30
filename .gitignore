@@ -23,6 +23,7 @@
 # misc
 .DS_Store
 *.pem
+firebase-service_key.json
 
 # debug
 npm-debug.log*
