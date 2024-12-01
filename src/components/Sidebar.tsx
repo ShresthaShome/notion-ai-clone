@@ -37,7 +37,7 @@ export default function Sidebar() {
     owner: [],
     editor: [],
   });
-  const [data, loading, error] = useCollection(
+  const [data] = useCollection(
     user &&
       query(
         collectionGroup(db, "rooms"),

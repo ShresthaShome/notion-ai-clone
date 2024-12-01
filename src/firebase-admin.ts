@@ -3,9 +3,7 @@ import { getFirestore } from "firebase-admin/firestore";
 
 const key = require("@/firebase-service_key.json");
 
-let app: App;
-
-app =
+const app: App =
   getApps().length === 0 ? initializeApp({ credential: cert(key) }) : getApp();
 
 const adminDb = getFirestore(app);

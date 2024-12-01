@@ -10,14 +10,14 @@ export default function LiveCursorProvider() {
 
   function handlePointerMove(e: PointerEvent<HTMLDivElement>) {
     const cursor = { x: Math.floor(e.pageX), y: Math.floor(e.pageY) };
-    console.log("handleMove1");
+    //console.log("handleMove1");
     updateMyPresence({ cursor });
-    console.log("handleMove2");
+    //console.log("handleMove2");
   }
   function handlePointerLeave() {
-    console.log("handleLeave1");
+    //console.log("handleLeave1");
     updateMyPresence({ cursor: null });
-    console.log("handleLeave2");
+    //console.log("handleLeave2");
   }
   return (
     <div onPointerMove={handlePointerMove} onPointerLeave={handlePointerLeave}>
