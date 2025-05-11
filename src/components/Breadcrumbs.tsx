@@ -23,14 +23,13 @@ export default function Breadcrumbs() {
         {segments.map((segment, index) => {
           if (!segment) return null;
           const href = `..${segments.slice(0, index + 1).join("/")}`;
-          console.log(href);
           const isLast = index === segments.length - 1;
 
           return (
             <Fragment key={segment}>
               <BreadcrumbSeparator />
               <BreadcrumbItem>
-                {isLast ? (
+                {isLast || segment === "doc" ? (
                   <BreadcrumbPage>{segment}</BreadcrumbPage>
                 ) : (
                   <BreadcrumbLink href={href}>{segment}</BreadcrumbLink>

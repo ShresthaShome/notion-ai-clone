@@ -7,7 +7,26 @@ import { Toaster } from "@/components/ui/sonner";
 
 export const metadata: Metadata = {
   title: "AI Notion Clone",
-  description: "Created by Ullas Shome as first Next.js project to master.",
+  description: "Created by Ullas Shome as the first Next.js project.",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/favicon-32x32.png",
+    apple: "/apple-touch-icon.png",
+    other: [
+      {
+        rel: "icon",
+        url: "/favicon-16x16.png",
+      },
+      {
+        rel: "icon",
+        url: "/favicon-32x32.png",
+      },
+      {
+        rel: "manifest",
+        url: "/site.webmanifest",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
